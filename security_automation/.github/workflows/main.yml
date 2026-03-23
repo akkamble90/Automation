@@ -1,41 +1,19 @@
-name: Security Automation Suite
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch: 
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4 # Updated to v4
-
-    - name: Set up Python
-      uses: actions/setup-python@v5 # Updated to v5
-      with:
-        python-version: '3.10'
-
-    - name: Install Chrome
+- name: Install Dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
-
-    - name: Install Dependencies
-      run: |
-        pip install -r requirements.txt
+        # Add the folder name before requirements.txt
+        pip install -r security_automation/requirements.txt
 
     - name: Run Security Tests
       run: |
-        python -m pytest security_automation --html=reports/report.html --self-contained-html
+        # Run pytest from the root, targeting the folder
+        python -m pytest security_automation --html=security_automation/reports/report.html --self-contained-html
       continue-on-error: true
 
     - name: Upload Security Report
-      uses: actions/upload-artifact@v4 # FIXED: Updated to v4
+      uses: actions/upload-artifact@v4
       with:
         name: security-scan-report
-        path: reports/
+        # Ensure the path matches where pytest saves the report
+        path: security_automation/reports/
