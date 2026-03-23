@@ -20,6 +20,15 @@ jobs:
       with:
         python-version: '3.10'
 
+    - name: Start OWASP Juice Shop (Target Application)
+      run: |
+        # Run Juice Shop in the background on port 3000
+        docker run --rm -d -p 3000:3000 bkimminich/juice-shop
+        # Wait for the server to start (Health Check)
+        echo "Waiting for Juice Shop to wake up..."
+        timeout 60s bash -c 'until curl -s localhost:3000; do sleep 5; done'
+        echo "Juice Shop is UP and running on localhost:3000"
+
     - name: Install Chrome
       run: |
         sudo apt-get update
@@ -27,12 +36,12 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        # Using the specific path since your files are inside a subfolder
+        # Pointing to your specific folder path
         pip install -r security_automation/requirements.txt
 
     - name: Run Security Tests
       run: |
-        # Run from the root but target the folder
+        # Running from root, targeting your folder
         python -m pytest security_automation --html=security_automation/reports/report.html --self-contained-html
       continue-on-error: true
 
