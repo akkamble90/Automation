@@ -3,10 +3,12 @@ import os
 from security_automation.core.driver_manager import get_driver
 from security_automation.utils.helpers import take_screenshot
 
-@pytest.fixture
+@pytest.fixture(scope="function")
 def driver():
-    # Toggle headless=True for background runs
-    driver = get_driver(headless=False)
+    # GitHub sets the 'CI' environment variable to 'true' by default.
+    is_github_actions = os.getenv('CI', 'false').lower() == 'true'
+    # If on GitHub, use headless=True. If on your laptop, use headless=False to see the browser.
+    driver = get_driver(headless=is_github_actions)
     yield driver
     driver.quit()
 
