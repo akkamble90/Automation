@@ -5,8 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  schedule:
-    - cron: '0 0 * * *' # Optional: Runs every day at midnight
+  workflow_dispatch: 
 
 jobs:
   test:
@@ -14,30 +13,29 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # Updated to v4
 
     - name: Set up Python
-      uses: actions/checkout@v3
+      uses: actions/setup-python@v5 # Updated to v5
       with:
         python-version: '3.10'
 
-    - name: Install Chrome & Dependencies
+    - name: Install Chrome
       run: |
         sudo apt-get update
-        sudo apt-get install - pip google-chrome-stable
+        sudo apt-get install -y google-chrome-stable
 
-    - name: Install Requirements
+    - name: Install Dependencies
       run: |
         pip install -r requirements.txt
 
     - name: Run Security Tests
-      # We use --headless in driver_manager.py for this to work
       run: |
         python -m pytest security_automation --html=reports/report.html --self-contained-html
       continue-on-error: true
 
     - name: Upload Security Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4 # FIXED: Updated to v4
       with:
         name: security-scan-report
         path: reports/
