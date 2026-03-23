@@ -1,0 +1,43 @@
+name: Security Automation Suite
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *' # Optional: Runs every day at midnight
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/checkout@v3
+      with:
+        python-version: '3.10'
+
+    - name: Install Chrome & Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install - pip google-chrome-stable
+
+    - name: Install Requirements
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Security Tests
+      # We use --headless in driver_manager.py for this to work
+      run: |
+        python -m pytest security_automation --html=reports/report.html --self-contained-html
+      continue-on-error: true
+
+    - name: Upload Security Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-scan-report
+        path: reports/

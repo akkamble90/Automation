@@ -1,0 +1,7 @@
+selenium
+pytest
+pytest-html
+loguru
+webdriver-manager
+requests
+beautifulsoup4

@@ -1,0 +1,110 @@
+2026-03-23 16:14:53.511 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:14:53.511 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:15:21.495 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:15:21.495 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:21:48.264 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:21:48.264 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:21:50.534 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:21:50.534 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:21:50.535 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:21:50.535 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:22:01.815 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:01.815 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:01.815 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:22:01.815 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:22:12.490 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:12.490 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:12.491 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:22:12.491 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:22:23.466 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:23.466 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:22:32.701 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:22:32.701 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:24:42.170 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:24:42.170 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:24:43.788 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:24:43.788 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:24:43.788 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:24:43.788 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:24:55.165 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:24:55.165 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:24:55.165 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:24:55.165 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:25:06.058 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:25:06.058 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:25:06.059 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:25:06.059 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:25:17.386 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:25:17.386 | INFO     | security_automation.utils.logger:log_info:6 - Weak authentication vulnerability detected
+2026-03-23 16:25:26.344 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:25:26.344 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:30:10.186 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:30:10.186 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: 123456
+2026-03-23 16:30:12.369 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:30:12.369 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: password
+2026-03-23 16:30:23.248 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:30:23.248 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin
+2026-03-23 16:30:34.133 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:30:34.133 | INFO     | security_automation.utils.logger:log_info:6 - Trying password: admin123
+2026-03-23 16:30:53.062 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:30:53.062 | INFO     | utils.logger:log_info:6 - Testing payload: <script>alert('XSS')</script>
+2026-03-23 16:41:52.213 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: 123456
+2026-03-23 16:41:57.898 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: password
+2026-03-23 16:41:59.369 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: admin
+2026-03-23 16:42:00.786 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: admin123
+2026-03-23 16:42:13.602 | INFO     | security_automation.utils.logger:log_info:6 - Injecting XSS Payload: <script>alert('XSS')</script>
+2026-03-23 16:47:39.835 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: 123456
+2026-03-23 16:47:40.906 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: password
+2026-03-23 16:47:41.891 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: admin
+2026-03-23 16:47:42.765 | INFO     | security_automation.utils.logger:log_info:6 - Testing Weak Password: admin123
+2026-03-23 16:47:52.538 | INFO     | security_automation.utils.logger:log_info:6 - Injecting XSS Payload: <script>alert('XSS')</script>
+2026-03-23 16:54:43.820 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 16:54:48.176 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 16:54:50.917 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 16:54:53.557 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 16:54:56.142 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 16:55:05.711 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS: <script>alert('XSS')</script>
+2026-03-23 17:04:07.089 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 17:04:11.826 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 17:04:14.481 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 17:04:16.913 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 17:04:19.686 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 17:04:30.247 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 17:17:54.117 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 17:17:58.339 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 17:18:00.754 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 17:18:02.883 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 17:18:04.910 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 17:18:13.241 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 17:20:57.703 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 17:21:01.902 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 17:21:04.393 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 17:21:06.563 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 17:21:08.691 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 17:21:16.661 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 17:21:28.842 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <img src=x onerror=alert(1)>
+2026-03-23 17:21:40.493 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: '><script>alert(1)</script>
+2026-03-23 17:25:14.427 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 17:25:19.069 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 17:25:21.441 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 17:25:23.604 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 17:25:25.698 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 17:25:34.976 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 17:25:46.798 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <img src=x onerror=alert(1)>
+2026-03-23 17:25:59.563 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: '><script>alert(1)</script>
+2026-03-23 17:36:40.308 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 17:36:43.883 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 17:36:46.521 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 17:36:48.625 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 17:36:50.826 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 17:36:58.314 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 17:37:09.894 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <img src=x onerror=alert(1)>
+2026-03-23 17:37:21.522 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: '><script>alert(1)</script>
+2026-03-23 18:29:49.202 | INFO     | security_automation.utils.logger:log_info:6 - Testing: 123456
+2026-03-23 18:29:53.736 | INFO     | security_automation.utils.logger:log_info:6 - Testing: password
+2026-03-23 18:29:56.604 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin
+2026-03-23 18:29:58.838 | INFO     | security_automation.utils.logger:log_info:6 - Testing: admin123
+2026-03-23 18:30:01.038 | INFO     | security_automation.utils.logger:log_info:6 - VULNERABILITY FOUND: Password 'admin123' works!
+2026-03-23 18:30:08.378 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <script>alert('XSS')</script>
+2026-03-23 18:30:21.312 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: <img src=x onerror=alert(1)>
+2026-03-23 18:30:33.763 | INFO     | security_automation.utils.logger:log_info:6 - Testing XSS Payload: '><script>alert(1)</script>

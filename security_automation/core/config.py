@@ -1,0 +1,3 @@
+BASE_URL = "http://localhost:3000"
+HEADLESS = False
+TIMEOUT = 10
