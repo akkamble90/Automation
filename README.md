@@ -1,5 +1,5 @@
-Web Security Automation Framework (WSAF)
-# Automated Security Testing Framework (DAST)
+# Web Security Automation Framework (WSAF)
+## Automated Security Testing Framework (DAST)
 
 A dynamic web application security testing framework that automates vulnerability verification for OWASP Top 10 flaws—focusing on **Reflected Cross-Site Scripting (XSS)** and **Authentication Brute-Force/Weak Credentials**—using **Python**, **pytest**, and **Selenium WebDriver** with optional **OWASP ZAP** proxy inspection.
 
@@ -10,8 +10,8 @@ A dynamic web application security testing framework that automates vulnerabilit
 ### 1. HTML Execution Summary Report
 The framework leverages `pytest-html` to generate a unified, standalone test execution report detailing test runs, pass/fail status, execution duration, and metadata.
 
-<!-- Replace the path below with your captured report screenshot -->
-![pytest-html Test Execution Report](security_automation/reports/screenshots/report_dashboard.png)
+![pytest-html Test Execution Report](reports/screenshots/report_dashboard.png)
+
 ---
 
 ### 2. Vulnerability Execution Evidence
@@ -28,7 +28,6 @@ The framework leverages `pytest-html` to generate a unified, standalone test exe
 
 ### 3. Execution Terminal & Live Logs
 
-<!-- Replace with a screenshot of your passing terminal session -->
 ![Terminal Execution Output](reports/screenshots/terminal_run.png)
 
 ---
