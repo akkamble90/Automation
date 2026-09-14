@@ -11,8 +11,7 @@ A dynamic web application security testing framework that automates vulnerabilit
 The framework leverages `pytest-html` to generate a unified, standalone test execution report detailing test runs, pass/fail status, execution duration, and metadata.
 
 <!-- Replace the path below with your captured report screenshot -->
-![pytest-html Test Execution Report](reports/screenshots/report_dashboard.png)
-
+![pytest-html Test Execution Report](security_automation/reports/screenshots/report_dashboard.png)
 ---
 
 ### 2. Vulnerability Execution Evidence
