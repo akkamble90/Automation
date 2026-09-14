@@ -89,6 +89,7 @@ pip install -r requirements.txt
 
 2. Set the target URL in core/config.py
 BASE_URL = "[https://demo.owasp-juice.shop](https://demo.owasp-juice.shop)"
+
 HEADLESS = True
 TIMEOUT = 10
 
