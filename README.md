@@ -11,7 +11,7 @@ A dynamic web application security testing framework that automates vulnerabilit
 
 <p align="center">
   <img src="reports/screenshots/success_admin123_165456.png" width="48%" alt="Authentication Vulnerability Found" />
-  <img src="reports/screenshots/FAIL_test_xss_detection_165511.png" width="48%" alt="XSS Test Detection Failure" />
+  <img src="reports/screenshots/FAIL_test_xss_detection_171825.png" width="48%" alt="XSS Test Detection Failure" />
 </p>
 
 * **Left:** Successful brute-force exploit demonstrating authentication bypass using weak credentials (`admin123`).
