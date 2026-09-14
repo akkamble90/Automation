@@ -7,3 +7,4 @@ def log_info(msg):
 
 def log_error(msg):
     logger.error(msg)
+    
