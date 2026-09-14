@@ -64,3 +64,33 @@ Built on the **Page Object Model (POM)** to decouple low-level browser interacti
                      |      Target Web Application       |
                      |      (e.g., OWASP Juice Shop)     |
                      +-----------------------------------+
+
+
+## Core Components
+core/driver_manager.py: Configures the Chrome WebDriver instance, automatically manages binary drivers via webdriver-manager, handles headless/CI container flags (--no-sandbox, --disable-dev-shm-usage), and optionally routes browser requests through OWASP ZAP.
+
+core/config.py: Centralizes global configurations, base target endpoints (BASE_URL), headless flags, and explicit wait timeouts.
+
+pages/: Encapsulates component-level UI abstractions (BasePage, LoginPage, SearchPage) so test routines remain resilient to frontend DOM shifts.
+
+tests/:
+
+test_auth.py: Automates credential fuzzing to identify weak, default, or dictionary-based administrator passwords.
+
+test_xss.py: Fuzzes search inputs using vector payloads to catch unescaped reflections and DOM alert events.
+
+utils/: Houses attack lists (payloads.py), structured logging via Loguru (logger.py), and automated failure screenshot utilities (helpers.py).
+
+1. Installation
+Clone the repository and install dependencies:
+git clone <repository-url>
+cd security_automation
+pip install -r requirements.txt
+
+2. Set the target URL in core/config.py
+BASE_URL = "[https://demo.owasp-juice.shop](https://demo.owasp-juice.shop)"
+HEADLESS = True
+TIMEOUT = 10
+
+3. Run Test Suite
+Run the test runner and compile the standalone HTML report:pytest --html=reports/report.html --self-contained-html
