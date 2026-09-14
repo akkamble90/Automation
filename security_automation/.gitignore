@@ -3,3 +3,6 @@ echo __pycache__/ >> .gitignore
 echo .pytest_cache/ >> .gitignore
 echo reports/ >> .gitignore
 echo *.log >> .gitignore
+reports/*
+!reports/screenshots/
+!reports/screenshots/*.png
